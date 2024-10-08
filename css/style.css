@@ -1,0 +1,173 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Colors*/
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+body {
+    background: var(--cream);
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+
+}
+
+img {
+    width: 300px;
+    border-radius: 8px 0 0 8px;
+}
+
+.container__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+    width: 300px;
+    height: 450px;
+
+    background-color: var(--white);
+    border-radius: 0 8px 8px 0;
+}
+
+h1 {
+    text-align: left;
+}
+
+.container__card-perfume {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+h1 {
+    font-family: Fraunces;
+    line-height: 1;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+
+    color: var(--dark-grayish-blue);
+}
+
+.container__card-prices {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container__card-actual-price {
+    font-family: Fraunces;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-cyan);
+}
+
+.container__card-old-price {
+    margin-left: 20px;
+    
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+button {
+    background: var(--dark-cyan);
+    padding: 15px;
+    margin-top: 15px;
+
+    border-radius: 8px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: var(--white);
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: hsl(159, 37%, 21%);
+    
+}
+
+button > img {
+    width: 17px;
+    height: 17px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container__image {
+        height: 270px;
+        width: 350px;
+        overflow: hidden;
+        position: relative;
+
+        border-radius: 8px 8px 0 0;
+    }
+
+    img {
+        position: absolute;
+        width: 350px;
+        top: -125px;
+
+    }
+
+    .container__card {
+        width: 350px;
+        height: 430px;
+        border-radius: 0 0px 8px 8px;
+    }
+
+    button {
+        padding: 20px; 
+        height: auto; 
+        background: var(--dark-cyan)
+    }
+
+    button img {
+        width: 17px; 
+        height: 17px;
+        position: relative;
+        top: 0;
+    }
+
+}
