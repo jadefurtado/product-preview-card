@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://jadefurtado.github.io/product-preview-card/)
+- [Live Site URL](https://jadefurtado.github.io/product-preview-card/)
 
 ## My process
 
